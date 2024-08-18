@@ -1,0 +1,167 @@
+:root {
+  --primary-color: #fafafa;
+  --secondary-color: #ffe9e3;
+  --text-color: #c4c1e0;
+  --dark-text-color: #7c73e6;
+  --darkest: #4a448b;
+}
+
+body {
+  background-color: var(--primary-color);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+.ImgIcon {
+  height: 32px;
+  width: 32px;
+  padding-right: 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--dark-text-color);
+}
+
+.navbar-title {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.navbar-buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: var(--dark-text-color);
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.navbar-buttons button:hover {
+  text-decoration: underline;
+}
+.imgCover {
+  width: 100%;
+  height: fit-content;
+  border-radius: 5 px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text p {
+  line-height: 1.6;
+  color: var(--dark-text-color);
+}
+
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+label {
+  font-size: 16px;
+  color: var(--darkest);
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Input field styling */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Change border color on focus */
+input[type="text"]:focus {
+  border-color: var(--dark-text-color);
+  outline: none;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--dark-text-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Change button color on hover */
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.Book-Title-div{
+    justify-content: center;
+    background-color: var(--secondary-color);
+    padding-top: 20px;
+    padding-left:50px;
+    padding-bottom: 20px;
+}
+
+.card-container {
+  margin-top: 10px;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: var(--darkest);
+}
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: var(--dark-text-color);
+}

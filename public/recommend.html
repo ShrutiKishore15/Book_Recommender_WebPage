@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommend by Title</title>
+    <link rel="icon" type="image/png" href="static/favicon.png">
+    <link rel="stylesheet" href="css/styleRecommend.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-title">
+            <img src="static/favicon.png" alt="" class="ImgIcon">
+            Book Recommendation System
+        </div>
+        <div class="navbar-buttons">
+            <button id="button1">Contact</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="text">
+          <h1>Discover the book you like the most</h1>
+          <p>Enter the title and get recommended by top 6 most similar books to your last read.</p>
+          <form id="Book-Search-Form">
+            <label for="nameInput">Enter your Book Title:</label>
+            <input type="text" id="nameInput" name="nameInput" placeholder="Title Of the Book">
+            <input type="submit" value="Search" class="SearchButton">
+        </form>
+        </div>
+        <div>
+            <img src="static/bookCovers.jpg" alt="" srcset="" class="imgCover">
+        </div>
+    </div>
+    <div class="Book-Title-div"> <h1 class="Book-Title">Recommended Books</h1></div>
+    <div id="results" class="card-container"></div>
+        <!-- Cards will be dynamically inserted here -->
+    </div>
+    <script src="js/scriptRecommend.js"></script>
+</body>
+</html>
